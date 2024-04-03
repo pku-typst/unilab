@@ -1,7 +1,7 @@
 #import "@preview/chic-hdr:0.4.0": *
 #import "@preview/unify:0.4.3": *
 // TODO: Change this to @preview/linguify:0.4.0, now waiting, use https://github.com/jomaway/typst-linguify/tree/dev-0.4.0 instead
-#import "@local/linguify:0.4.0": *
+#import "linguify/lib.typ": *
 #import "@preview/oxifmt:0.2.0": strfmt
 
 #let 宋体 = "SimSun"
