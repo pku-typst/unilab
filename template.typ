@@ -1,8 +1,9 @@
 #import "@preview/chic-hdr:0.4.0": *
 #import "@preview/unify:0.4.3": *
-// TODO: Change this to @preview/linguify:0.4.0, now waiting, use https://github.com/jomaway/typst-linguify/tree/dev-0.4.0 instead
-#import "linguify/lib.typ": *
+#import "@preview/linguify:0.4.0": *
 #import "@preview/oxifmt:0.2.0": strfmt
+
+#import "titlepage.typ": title-page
 
 #let 宋体 = "SimSun"
 #let 黑体 = "SimHei"
@@ -37,46 +38,6 @@
 
 #let analysis = [
   = #linguify("analysis", from: __template_db)
-]
-
-/// Generate a title page
-///
-/// - `title`: The title of the document, using BOLD `TITLE-FONT`
-/// - `subtitle`: The subtitle of the document, using `SUBTITLE-FONT`
-/// - `author`: The author of the document, using `SUBTITLE-FONT`
-/// - `bottom-text`: The text at the bottom of the page, using `SUBTITLE-FONT`
-#let title-page(title: none, subtitle: none, author: none, bottom-text: none) = [
-  #v(40pt)
-  #align(
-    center,
-    text(size: 28pt, font: TITLE-FONT, weight: "bold")[
-      #title
-    ],
-  )
-  #align(
-    center,
-    text(size: 18pt, font: SUBTITLE-FONT)[
-      #subtitle
-    ],
-  )
-  #align(
-    center,
-    text(size: 12pt, font: SUBTITLE-FONT)[
-      #author
-    ],
-  )
-  #place(
-    bottom + center,
-    [
-      #align(
-        center,
-        text(size: 12pt, font: SUBTITLE-FONT)[
-          #bottom-text
-        ],
-      )
-    ],
-  )
-  #pagebreak(weak: true)
 ]
 
 /// Setup the lab report document
@@ -140,7 +101,7 @@
         ] else {
           none
         }
-      } #student-no \ #student-name
+      } #student-name \ #student-no
     ],
     bottom-text: [
       #linguify("exper-date", args: (exper-date: exper-date), from: __template_db) \
