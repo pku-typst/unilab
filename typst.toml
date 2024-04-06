@@ -1,6 +1,6 @@
 [package]
 name = "unilab"
-version = "0.0.1"
+version = "0.0.2"
 entrypoint = "lib.typ"
 authors = ["sjfhsjfh <https://github.com/sjfhsjfh>"]
 license = "MIT"

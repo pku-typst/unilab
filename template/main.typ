@@ -1,4 +1,4 @@
-#import "@local/unilab:0.0.1": *
+#import "@preview/unilab:0.0.2": *
 
 #set text(lang: "zh")
 
