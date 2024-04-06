@@ -62,6 +62,7 @@
   student-name: none,
   faculty: none,
   class: none,
+  logos: (none, none),
   doc,
 ) = {
   let ord-str = [
@@ -107,6 +108,7 @@
       #linguify("exper-date", args: (exper-date: exper-date), from: __template_db) \
       #linguify("handin-date", args: (handin-date: handin-date), from: __template_db)
     ],
+    logos: logos,
   )
   
   // Set header & footer

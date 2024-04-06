@@ -1,4 +1,4 @@
-#import "@preview/unilab:0.0.1": *
+#import "@local/unilab:0.0.1": *
 
 #set text(lang: "zh")
 
@@ -11,6 +11,7 @@
   student-name: "张三",
   student-no: 2020200111,
   faculty: "物理学院",
+  logos: (image("./school-logo.svg"), image("./school-text.svg")),
   doc,
 )
 
