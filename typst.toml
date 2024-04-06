@@ -2,10 +2,10 @@
 name = "unilab"
 version = "0.0.2"
 entrypoint = "lib.typ"
-authors = ["sjfhsjfh <https://github.com/sjfhsjfh>"]
+authors = ["PKU Typst <https://github.com/pku-typst>"]
 license = "MIT"
 description = "Lab report" 
-repository = "https://github.com/sjfhsjfh/unilab"
+repository = "https://github.com/pku-typst/unilab"
 keywords = ["template", "labreport", "lab report", "experiment report"]
 categories = ["report"]
 compiler = "0.11.0"
