@@ -1,6 +1,6 @@
 #import "@preview/chic-hdr:0.5.0": *
 #import "@preview/unify:0.4.3": *
-#import "@preview/linguify:0.4.2": *
+#import "@local/linguify:0.4.0": *
 #import "@preview/oxifmt:0.2.0": strfmt
 
 #import "titlepage.typ": title-page
@@ -74,7 +74,7 @@
       none
     }
   ]
-  
+
   // Generate title page
   title-page(
     title: course-name,
@@ -110,7 +110,7 @@
     ],
     logos: logos,
   )
-  
+
   // Set header & footer
   show: chic.with(
     chic-footer(),
@@ -123,7 +123,7 @@
     chic-offset(16pt),
     chic-height(64pt),
   )
-  
+
   // Miscellanous settings
   // Numbering
   set math.equation(numbering: "(1)")
