@@ -1,6 +1,6 @@
-#import "@preview/chic-hdr:0.4.0": *
+#import "@preview/chic-hdr:0.5.0": *
 #import "@preview/unify:0.4.3": *
-#import "@preview/linguify:0.4.0": *
+#import "@preview/linguify:0.4.2": *
 #import "@preview/oxifmt:0.2.0": strfmt
 
 #import "titlepage.typ": title-page
